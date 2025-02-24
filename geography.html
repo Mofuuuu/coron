@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bgyellow1.jpg'); 
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .logo-container {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('coronbg12.png') no-repeat center;
+            background-size: contain; /* Makes sure it resizes properly */
+            min-height: 100px; /* Ensures visibility */
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap; /* Prevents stacking */
+            overflow-x: auto; /* Allows horizontal scrolling if needed */
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        nav ul li a {
+            background-color: #FFFF;
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 14px;
+            display: block;
+            white-space: nowrap; /* Prevents text from breaking */
+        }
+        nav ul li a:hover {
+            background-color: #333;
+            color: #ec9797;
+        }
+        h1 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: #ffffff;
+            margin: 5px 0;
+            padding: 0 10px;
+        }
+        .barangay-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .barangay-list .column {
+            width: 45%;
+            min-width: 200px;
+            text-align: left;
+        }
+        .footer {
+            color: #ffffff;
+            background-color: #333333;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        @media (max-width: 533px) {
+            .barangay-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .barangay-list .column {
+                width: 90%;
+            }
+            nav ul {
+                justify-content: center;
+                flex-wrap: nowrap; /* Prevent stacking */
+                overflow-x: auto; /* Enables scrolling if buttons exceed width */
+                padding: 5px;
+            }
+            nav ul li {
+                margin: 2px; /* Reduce spacing to fit smaller screens */
+            }
+            nav ul li a {
+                font-size: 12px; /* Slightly reduce font size for better fit */
+                padding: 6px 10px; /* Adjust button padding */
+            }
+            .logo-container {
+                background-size: contain; /* Keep it consistent */
+                min-height: 80px; /* Adjust height for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="coronseal1.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>              
+                <li><a href="geography.html">Geography</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Geography</h1>
+        <p>The municipality of Busuanga comprises the western part of Busuanga Island, while Coron comprises the eastern part of Busuanga Island, all of Coron Island and about 50 other minor islets stretching as far as Tara Island in the north-east and Canipo Island in the south. All these islands are part of the Calamian Archipelago in northern Palawan that separates the South China Sea from the Sulu Sea.</p>
+        <h1>Barangays</h1>
+        <div class="barangay-list">
+            <div class="column">
+                <p>Banuang Daan<br>
+                Bintuan<br>
+                Borac<br>
+                Buenavista<br>
+                Bulalacao<br>
+                Cabugao<br>
+                Decabobo<br>
+                Decalachao<br>
+                Guadalupe (also called Binalabag)<br>
+                Lajala<br>
+                Malawig<br>
+                Marcilla</p>
+            </div>
+            
+            <div class="column">
+                <p>Barangay I (Poblacion)<br>
+                Barangay II (Poblacion)<br>
+                Barangay III (Poblacion)<br>
+                Barangay IV (Poblacion)<br>
+                Barangay V (Poblacion)<br>
+                Barangay VI (Poblacion)<br>
+                San Jose<br>
+                San Nicolas<br>
+                Tagumpay<br>
+                Tara<br>
+                Turda</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>All Rights Reserved &copy; Municipality of Coron</p>
+    </div>
+</body>
+</html>

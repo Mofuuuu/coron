@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipality of Coron</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bgyellow1.jpg'); 
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures full viewport height */
+        }
+        .container {
+            text-align: center;
+            padding: 10px;
+            max-width: 100%;
+            box-sizing: border-box;
+            flex: 1; /* Pushes footer to the bottom */
+        }
+        .logo-container {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('coronbg12.png') no-repeat center;
+            background-size: contain;
+            min-height: 100px; /* Ensures visibility */
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap; /* Prevents stacking */
+            overflow-x: auto; /* Allows horizontal scrolling if needed */
+        }
+        nav ul li {
+            margin: 5px;
+        }
+        nav ul li a {
+            background-color: #FFFF;
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 14px;
+            display: block;
+            white-space: nowrap; /* Prevents text from breaking */
+        }
+        nav ul li a:hover {
+            background-color: #333;
+            color: #ec9797;
+        }
+        h1 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: #ffffff;
+            margin: 5px 0;
+            padding: 0 10px;
+        }
+        .footer {
+            color: #ffffff;
+            background-color: #333333;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        @media (max-width: 533px) {
+            .logo-container {
+                background-size: contain; /* Keep it consistent */
+                min-height: 100px; /* Match the default height */
+            }
+            nav ul {
+                justify-content: center;
+                flex-wrap: nowrap; /* Prevent stacking */
+                overflow-x: auto; /* Enables scrolling if buttons exceed width */
+                padding: 5px;
+            }
+            nav ul li {
+                margin: 2px; /* Reduce spacing to fit smaller screens */
+            }
+            nav ul li a {
+                font-size: 12px; /* Slightly reduce font size for better fit */
+                padding: 6px 10px; /* Adjust button padding */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="coronseal1.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>             
+                <li><a href="geography.html">Geography</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Municipality of Coron</h1>
+        <p>Coron, officially the Municipality of Coron (Tagalog: Bayan ng Coron), is a 1st class municipality in the province of Palawan, Philippines. According to the 2020 census, it has a population of 65,855 people.</p>
+        <p>The main population center of the municipality is composed of Poblacion barangays 1 to 6, where the Municipal Building, the Municipal Legislative Building, and the Judicial Hall of the Municipal Circuit Trial Court are located. Its fiesta is held annually on August 28 in honor of Saint Augustine. It is the commercial capital of the Calamian Islands.</p>
+        <p>The municipality is home to the Coron Island Natural Biotic Area, which is listed in the natural category of the UNESCO World Heritage Tentative List.</p>
+    </div>
+    <div class="footer">
+        <p>All Rights Reserved &copy; Municipality of Coron</p>
+    </div>
+</body>
+</html>
