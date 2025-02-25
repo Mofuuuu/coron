@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <style>
-        body {
+                body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-image: url('bgyellow1.jpg'); 
             background-size: cover;
             background-position: center;
-            overflow-x: hidden; /* Prevents horizontal scrolling */
+            overflow-x: hidden; 
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Ensures full viewport height */
+            min-height: 100vh; 
         }
         .container {
             text-align: center;
             padding: 10px;
             max-width: 100%;
             box-sizing: border-box;
-            flex: 1; /* Pushes footer to the bottom */
+            flex: 1; 
         }
         .logo-container {
             width: 100%;
@@ -32,7 +32,7 @@
             align-items: center;
             background: url('coronbg12.png') no-repeat center;
             background-size: contain;
-            min-height: 100px; /* Ensures visibility */
+            min-height: 100px; 
         }
         .logo {
             max-width: 150px;
@@ -44,8 +44,8 @@
             margin: 10px 0;
             display: flex;
             justify-content: center;
-            flex-wrap: nowrap; /* Prevents buttons from stacking */
-            overflow-x: auto; /* Allows horizontal scrolling if needed */
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
         }
         nav ul li {
             margin: 5px;
@@ -59,7 +59,7 @@
             border-radius: 5px;
             font-size: 14px;
             display: block;
-            white-space: nowrap; /* Prevents text from breaking */
+            white-space: nowrap; 
         }
         nav ul li a:hover {
             background-color: #333;
@@ -81,13 +81,15 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 10px; 
             margin-top: 30px;
         }
         .image-container {
             max-width: 100%;
             flex: 1;
             min-width: 300px;
+            display: flex;
+            justify-content: flex-end; 
         }
         .image-container img {
             max-width: 100%;
@@ -99,6 +101,9 @@
             text-align: left;
             flex: 1;
             min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
         }
         .footer {
             color: #ffffff;
@@ -113,27 +118,31 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .image-container {
+                justify-content: center; 
+            }
             .text-content {
                 text-align: center;
             }
             .logo-container {
-                background-size: contain; /* Keep it consistent */
-                min-height: 100px; /* Match the default height */
+                background-size: contain; 
+                min-height: 100px; 
             }
             nav ul {
                 justify-content: center;
-                flex-wrap: nowrap; /* Prevent stacking */
-                overflow-x: auto; /* Enables scrolling if buttons exceed width */
+                flex-wrap: nowrap; 
+                overflow-x: auto; 
                 padding: 5px;
             }
             nav ul li {
-                margin: 2px; /* Reduce spacing to fit smaller screens */
+                margin: 2px;
             }
             nav ul li a {
-                font-size: 12px; /* Slightly reduce font size for better fit */
-                padding: 6px 10px; /* Adjust button padding */
+                font-size: 12px;
+                padding: 6px 10px;
             }
         }
+
     </style>
     
     
@@ -146,10 +155,10 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>               
+                <li><a href="about.html">About</a></li>               
                 <li><a href="geography.html">Geography</a></li>
-                <li><a href="Attractions.html">Attractions</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
