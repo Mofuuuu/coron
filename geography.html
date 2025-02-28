@@ -5,119 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geography</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('bgyellow1.jpg'); 
-            background-size: cover;
-            background-position: center;
-            overflow-x: hidden; 
-        }
-        .container {
-            text-align: center;
-            padding: 10px;
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-        .logo-container {
-            width: 100%;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: url('coronbg12.png') no-repeat center;
-            background-size: contain; 
-            min-height: 100px;
-        }
-        .logo {
-            max-width: 150px;
-            height: auto;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 10px 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: nowrap; 
-            overflow-x: auto;
-        }
-        nav ul li {
-            margin: 5px;
-        }
-        nav ul li a {
-            background-color: #FFFF;
-            text-decoration: none;
-            color: #333;
-            padding: 8px 12px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            font-size: 14px;
-            display: block;
-            white-space: nowrap;
-        }
-        nav ul li a:hover {
-            background-color: #333;
-            color: #ec9797;
-        }
-        h1 {
-            font-size: 20px;
-            color: #ffffff;
-            margin-top: 10px;
-        }
-        p {
-            font-size: 14px;
-            color: #ffffff;
-            margin: 5px 0;
-            padding: 0 10px;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('bgyellow1.jpg'); 
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .container {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .logo-container {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('coronbg12.png') no-repeat center;
+        background-size: contain; 
+        min-height: 100px;
+    }
+    .logo {
+        max-width: 150px;
+        height: auto;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap; 
+        overflow-x: auto;
+    }
+    nav ul li {
+        margin: 5px;
+    }
+    nav ul li a {
+        background-color: #FFFF;
+        text-decoration: none;
+        color: #333;
+        padding: 8px 12px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        font-size: 14px;
+        display: block;
+        white-space: nowrap;
+    }
+    nav ul li a:hover {
+        background-color: #333;
+        color: #ec9797;
+    }
+    h1 {
+        font-size: 20px;
+        color: #ffffff;
+        margin-top: 10px;
+    }
+    p {
+        font-size: 14px;
+        color: #ffffff;
+        margin: 5px 0;
+        padding: 0 10px;
+    }
+    .barangay-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .barangay-list .column {
+        width: 45%;
+        min-width: 200px;
+        text-align: left;
+    }
+    .footer {
+        color: #ffffff;
+        background-color: #333333;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    @media (max-width: 533px) {
         .barangay-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            flex-direction: column;
+            align-items: center;
         }
         .barangay-list .column {
-            width: 45%;
-            min-width: 200px;
-            text-align: left;
+            width: 90%;
         }
-        .footer {
-            color: #ffffff;
-            background-color: #333333;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            margin-top: 10px;
+        nav ul {
+            justify-content: center;
+            flex-wrap: nowrap; 
+            overflow-x: auto; 
+            padding: 5px;
         }
-        @media (max-width: 533px) {
-            .barangay-list {
-                flex-direction: column;
-                align-items: center;
-            }
-            .barangay-list .column {
-                width: 90%;
-            }
-            nav ul {
-                justify-content: center;
-                flex-wrap: nowrap; 
-                overflow-x: auto; 
-                padding: 5px;
-            }
-            nav ul li {
-                margin: 2px;
-            }
-            nav ul li a {
-                font-size: 12px; 
-                padding: 6px 10px;
-            }
-            .logo-container {
-                background-size: contain; 
-                min-height: 80px; 
-            }
+        nav ul li {
+            margin: 2px;
         }
-    </style>
+        nav ul li a {
+            font-size: 12px; 
+            padding: 6px 10px;
+        }
+        .logo-container {
+            background-size: contain; 
+            min-height: 80px; 
+        }
+    }
+</style>
+
 </head>
 <body>
     <div class="container">
